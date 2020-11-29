@@ -84,7 +84,7 @@ function onShowBigImage(event) {
 
 	event.preventDefault();
 	const picture = allPictures.find(picture => picture.previewURL === event.target.src);
-	basicLightbox.create(`<img width="1400" height="900" src="${picture.largeImageURL}">`).show();
+	basicLightbox.create(`<img width="1400" height="900" src="${picture.largeImageURL}" alt="${picture.tags}">`).show();
 }
 
 function onInfiniteScrollUse(event) {
